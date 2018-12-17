@@ -1,0 +1,1 @@
+<a href="{!!action($tble.'Controller@show', [$id => $prevPage])!!}" > < Previous {{$text}}</a>&nbsp;|&nbsp;<a href="{!!action($tble.'Controller@show', [$id => $nextPage])!!}" > Next {{$text}} ></a>
