@@ -15,7 +15,7 @@ class ArticlesController extends Controller
     public function index()
     {     
         $article = Article::orderBy('artsort')->orderBy('artdate')->paginate(12);
-        return view('article.index', compact(['article']));
+        return view('Article.index', compact(['article']));
     }
  
     /**
