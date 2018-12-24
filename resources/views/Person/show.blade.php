@@ -26,7 +26,7 @@
 			<div class="col">
 				@include('includes.searches', ['tble' => 'SearchPeople'])
 
-				<h1>{{ $person->salutation.' '  ?? ''}}{{ $person->first.' '  ?? ''}}{{  $person->last }} {{ $person->honorifics  ?? ''}}</h1>
+				<h1>{{ $person->salutation.' '  ?? ''}}{{ $person->first.' '  ?? ''}}{{  $person->last }} {{ $person->honorifics  ?? '' }}</h1>
 				
 				@if($person->ppimage)
 					<div class="block w40 right">
