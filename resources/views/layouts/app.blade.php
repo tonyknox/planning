@@ -20,7 +20,10 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="/css/knox_screen.css" rel="stylesheet">
-     <!-- Scripts -->
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+     
     <script>
         window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),

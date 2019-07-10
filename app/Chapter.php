@@ -34,6 +34,11 @@ protected $primaryKey = 'chapid';
         return $this->hasMany(Greenery::class);
     }
 
+    public function munros()
+    {
+        return $this->hasMany(Munro::class);
+    }
+
      public function directories()
     {
         return $this->belongsTo(Directory::class);

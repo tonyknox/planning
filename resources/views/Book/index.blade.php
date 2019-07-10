@@ -27,9 +27,10 @@
 				<div class="col">
 					
 				
-						<big><strong><a href="{{ action('BooksController@show', [$bk->bkid]) }}">{!!  $bk->bkname !!}</a></strong></big><br />Author: {{ $bk->bkauthor }}<br />
-						Publisher: {{ $bk->publisher }}<br />
-						Date Published: {{ $bk->datepublished }}, ISBN: {{ $bk->isbn }}
+						<big><strong><a href="{{ action('BooksController@show', [$bk->bkid]) }}">{!!  $bk->bkname !!}</a></strong></big><br />
+						@if(strlen($bk->bkauthor))Author: {{ $bk->bkauthor }};<br /> @endif
+						@if(strlen($bk->publisher))Publisher: {{ $bk->publisher }}<br /> @endif
+						@if(strlen($bk->datepublished))Date Published: {{ $bk->datepublished }}; @endif, @if(strlen($bk->isbn))ISBN: {{ $bk->isbn }}@endif
 						<br /><br />
 					</div>
 				</div>
@@ -46,4 +47,3 @@
 @include ('errors.list')
 
 @stop
-

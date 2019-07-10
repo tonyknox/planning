@@ -6,6 +6,7 @@ use App\Chapter;
 use App\Page;
 use App\Greenery;
 use App\Mccplan;
+use App\Munro;
 use App\Book;
 use Illuminate\Http\Request;
 
@@ -64,6 +65,9 @@ class ChaptersController extends Controller
         }
         elseif($chapter->book_bkid == 4){
             $pges = Mccplan::where('chapter_chapid',$chapter->chapid)->get();
+        }
+        elseif($chapter->book_bkid == 5){
+            $pges = Munro::where('chapter_chapid',$chapter->chapid)->get();
         }
 
         list($prevPage,$nextPage) = nextPage('App\Chapter','chapid',$chapter->chapid,'book_bkid',$chapter->book_bkid);

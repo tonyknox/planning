@@ -36,6 +36,9 @@ Route::resource('places', 'PlacesController');
 Route::resource('pages', 'PagesController');
 Route::resource('greeneries', 'GreeneriesController');
 Route::resource('mccplans', 'MccplansController');
+Route::resource('munros', 'MunrosController');
+
+Route::resource('/munrofootnotes', 'MunrofootnotesController');
 
 Route::get('SearchArticles', 'SearchController@searcharticles');
 Route::get('SearchChapters', 'SearchController@searchchapters');

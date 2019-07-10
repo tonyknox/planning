@@ -21,11 +21,11 @@
 		@include('includes.searches', ['tble' => 'SearchChapters'])
 
 		@foreach($book as $book)
-			<h2>{{$book->bkname}}</h2>
+			<h2>{!! $book->bkname !!}</h2>
 		@endforeach
 		<br />
 
-		<h4>{{$chapter->chapname}}</h4>
+		<h4>{!! $chapter->chapname !!}</h4>
 
 		@foreach($pges as $p)
 			<strong>

@@ -43,6 +43,11 @@ h1,h2,h3,h4,h5{
 .blu {
   color:blue;
 } 
+.rouge {
+  color:red;
+  font-weight: bold;
+} 
+
 .light {
   font-variant:light;
 }
@@ -64,4 +69,9 @@ tr.tr-bottomBorder{
   border-bottom: 1px solid black; 
     padding: 10px; 
     text-align: left;
+}
+
+.modal-body {
+  max-height: calc(100vh - 143px);
+  overflow-y: auto; 
 }
